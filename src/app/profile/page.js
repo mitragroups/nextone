@@ -1,3 +1,12 @@
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+
 export default function Profile() {
-  return <div>Profile</div>;
+  return (
+    <div>
+      <Header />
+      <main>Page Profile</main>
+      <Footer />
+    </div>
+  );
 }

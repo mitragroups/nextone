@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div>
       <Header />
-      <main>About</main>
+      <main>Page About</main>
       <Footer />
     </div>
   );
