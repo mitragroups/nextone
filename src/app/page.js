@@ -2,6 +2,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Card } from "@/components/card";
 import { Button } from "@/components/button";
+import { DashboardTemplate } from "@/components/dashboard.template";
 
 export default function Home() {
   const students = [
@@ -13,8 +14,8 @@ export default function Home() {
   ];
 
   return (
-    <div>
-      <Header />
+    <DashboardTemplate>
+      {/* <Header /> */}
       <main className="grid grid-cols-3 gap-4">
         {students.map((student) => {
           return <Card key={student.name} {...student} />;
@@ -28,7 +29,7 @@ export default function Home() {
         <div>+</div>
         <div>Submit Secondary</div>
       </Button>
-      <Footer />
-    </div>
+      {/* <Footer /> */}
+    </DashboardTemplate>
   );
 }
